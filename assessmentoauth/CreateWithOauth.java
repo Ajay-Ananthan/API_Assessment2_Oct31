@@ -11,7 +11,6 @@ public class CreateWithOauth {
 	public void create() {
     	
     	RestAssured.baseURI="https://dev120775.service-now.com/api/now/table";
-    	RestAssured.authentication=RestAssured.basic("admin","Test@123");
     	Response response = RestAssured.given().contentType("application/json")
     			.header("Authorization","Bearer Ycr1P-xAYXu63EMjhASdpIUCbJDgVqbLEapop9NUinWgr6x-TKtvx9rJ2o5FmX_GFPVb2SB6J7Kt0prB7ghXjw").when().body("{\r\n"
     			+ "    \"short_description\": \"created via Postman Ajay\",\r\n"
